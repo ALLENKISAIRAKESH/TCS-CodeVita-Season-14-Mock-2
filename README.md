@@ -73,12 +73,7 @@ python 05_Path_Finder/path_finder.py < input.txt
 python 06_Solve_The_Expression/solve_expression.py < input.txt
 ```
 
----
 
-## 🛡️ Anti-Plagiarism & Humanization Compliance
-- **Zero Comments:** All source codes have comments and docstrings completely stripped to prevent NLP text classifier false positives.
-- **Independent AST:** Original algorithmic formulation guarantees 0% AST collision on MOSS similarity engines.
-- **Contest-Tested:** 100% verified against all official TCS CodeVita Season 14 Mock 2 test cases.
 
 ---
 
