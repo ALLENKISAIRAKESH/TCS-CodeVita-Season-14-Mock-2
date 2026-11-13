@@ -6,14 +6,14 @@
 
 ---
 
-## 🧒 The "Lazy Man & Kid" Explanation (Everyday Real-World Analogy)
+## 💡 Real-World Intuition & Analogy
 
 ### 🎮 The Birthday Party Guest List with Drama
 
 Imagine you are planning the ultimate Uno game party at an arcade.
 - Each friend has an entry ticket price (their **skill points**). 
 - Your mom gives you a strict wallet budget of $\$W$ (**skill limit**).
-- Your goal: **Invite as many kids as possible** without exceeding your budget!
+- Your goal: **Invite as many players as possible** without exceeding your budget!
 
 Now comes the playground drama:
 1. **Best Friends (Package Deal):** If you invite Aryan, you MUST also invite his best friend Kabir. They are inseparable. If you can't afford both, you can't invite either!
@@ -21,8 +21,8 @@ Now comes the playground drama:
 3. **The Drama Bomb (Internal Feud):** What if Kabir and Aryan are best friends, but they also secretly hate each other (they are also listed as rivals)? Since they insist on coming together, but can't be in the same room, **they disqualify themselves completely**! Neither can come.
 
 ### How do we solve this?
-- For normal kids with **no rivalries**, it's like a supermarket shopping spree: pick the lightest items to fit the most items in your cart (**Knapsack DP**).
-- For kids involved in rivalries, there are only a tiny handful of them ($N_1 + N_2 \le 10$). We can quickly test every peaceful combination on our fingers (**Bitmask**)!
+- For players with **no rivalries**, it's like a supermarket shopping spree: pick the lightest items to fit the most items in your cart (**Knapsack DP**).
+- For players involved in rivalries, there are only a tiny handful of them ($N_1 + N_2 \le 10$). We can quickly test every peaceful combination on our fingers (**Bitmask**)!
 
 ---
 
@@ -55,7 +55,7 @@ Because $N_1 + N_2 \le 10$, the number of rival-involved groups is at most 10. T
 ### 3. Divide Groups into Two Pools
 1. **Peaceful Pool (No Rivalry):**
    Groups that have no rivalries with anyone. Run standard 0/1 Knapsack Dynamic Programming:
-   $$dp[w] = \max(\text{kids chosen with total skill } \le w)$$
+   $$dp[w] = \max(\text{players chosen with total skill } \le w)$$
 2. **Conflict Pool (Rivalry Involved):**
    Only a small number $K \le 10$ of groups have rivalries. Assign each an index $0, 1, \dots, K-1$.
    Build an adjacency conflict bitmask for each group: `adj[i]` has bit $j$ set if group $i$ and group $j$ are rivals.
@@ -216,3 +216,4 @@ print(ans, end='')
 |---|---|---|
 | **Time Complexity** | $\mathcal{O}(N + 2^K + N \times \text{limit})$ | DSU operations take almost $\mathcal{O}(N)$. Knapsack DP runs in $N \times \text{limit} \le 25 \times 1000 = 2.5 \times 10^4$ operations. Bitmask evaluation takes $2^K$ where $K \le 10 \implies 1024$ steps. Overall time $< 0.02$ seconds. |
 | **Space Complexity** | $\mathcal{O}(N + \text{limit} + 2^K)$ | Storage for DSU arrays, DP array (size 1001), and bitmask arrays (size 1024). |
+

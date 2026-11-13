@@ -6,7 +6,7 @@
 
 ---
 
-## 🧒 The "Lazy Man & Kid" Explanation (Everyday Real-World Analogy)
+## 💡 Real-World Intuition & Analogy
 
 ### 🛋️ Carrying a Long Surfboard Down a Hallway ("PIVOT!")
 
@@ -199,3 +199,4 @@ else:
 |---|---|---|
 | **Time Complexity** | $\mathcal{O}(M \times N \times K^2)$ | Maximum number of states $V \le 2 \times 15 \times 15 = 450$. Each state has at most 4 translations and 4 rotations. Each collision test takes $\mathcal{O}(K^2)$ where $K \le 6$. Total operations $< 1.5 \times 10^4$. Runs in $< 0.01$ seconds. |
 | **Space Complexity** | $\mathcal{O}(M \times N)$ | BFS queue and visited state dictionary store at most 450 entries. |
+

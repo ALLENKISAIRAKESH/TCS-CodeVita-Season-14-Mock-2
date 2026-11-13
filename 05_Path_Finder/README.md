@@ -6,7 +6,7 @@
 
 ---
 
-## 🧒 The "Lazy Man & Kid" Explanation (Everyday Real-World Analogy)
+## 💡 Real-World Intuition & Analogy
 
 ### 🐸 Lilly the Diva Frog on River Stepping Stones
 
@@ -175,3 +175,4 @@ print(dist[tr][tc], end='')
 |---|---|---|
 | **Time Complexity** | $\mathcal{O}(N \times M \log(NM))$ | Grid size $V \le 20 \times 20 = 400$. Each node has at most 8 directed edges. The min-heap operations take at most $8 \times 400 \log(400) \approx 2.5 \times 10^4$ operations. Runs in $< 0.01$ seconds. |
 | **Space Complexity** | $\mathcal{O}(N \times M)$ | 2D matrices for grid values, blocked cells, distance table, and priority queue. |
+

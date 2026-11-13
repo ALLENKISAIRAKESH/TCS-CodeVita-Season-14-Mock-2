@@ -6,7 +6,7 @@
 
 ---
 
-## 🧒 The "Lazy Man & Kid" Explanation (Everyday Real-World Analogy)
+## 💡 Real-World Intuition & Analogy
 
 ### 📟 The Secret Code on the Broken Digital Clock
 
@@ -209,3 +209,4 @@ print(''.join(out), end='')
 |---|---|---|
 | **Time Complexity** | $\mathcal{O}(L \times B)$ | $L \le 32$ tokens, and each operand binary string has length $B \le 32 \times 9 = 288$ bits. Parsing and bitwise operations take at most a few thousand CPU instructions. Runs in $< 0.01$ seconds. |
 | **Space Complexity** | $\mathcal{O}(L \times B)$ | Memory required for recursion stack and binary string representations. |
+

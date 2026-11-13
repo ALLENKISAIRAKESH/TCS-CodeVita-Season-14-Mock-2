@@ -1,6 +1,6 @@
 # TCS CodeVita Season 14 - Mock 2 Solutions
 
-Comprehensive, verified solutions in **Python** (and original **Java**) with dedicated explanation guides for every problem. Each problem includes a **"lazy man & kid" real-world analogy**, optimal algorithmic complexity analysis, step-by-step trace walkthroughs, and humanized zero-plagiarism code.
+Comprehensive, verified solutions in **Python** (and original **Java**) with dedicated explanation guides for every problem. Each problem includes an **intuitive real-world analogy**, optimal algorithmic complexity analysis, step-by-step trace walkthroughs, and humanized zero-plagiarism code.
 
 ---
 
@@ -79,3 +79,10 @@ python 06_Solve_The_Expression/solve_expression.py < input.txt
 - **Zero Comments:** All source codes have comments and docstrings completely stripped to prevent NLP text classifier false positives.
 - **Independent AST:** Original algorithmic formulation guarantees 0% AST collision on MOSS similarity engines.
 - **Contest-Tested:** 100% verified against all official TCS CodeVita Season 14 Mock 2 test cases.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](./LICENSE) file for details.  
+Copyright (c) 2026 **ALLENKI SAI RAKESH**. All rights reserved.

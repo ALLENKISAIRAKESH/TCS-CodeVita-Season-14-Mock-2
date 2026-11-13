@@ -6,7 +6,7 @@
 
 ---
 
-## 🧒 The "Lazy Man & Kid" Explanation (Everyday Real-World Analogy)
+## 💡 Real-World Intuition & Analogy
 
 ### 🔌 The Tangled Phone Charger & The Table Leg
 
@@ -240,3 +240,4 @@ print(abs(total_turns) // 2, end='')
 |---|---|---|
 | **Time Complexity** | $\mathcal{O}(N \times M)$ | Checking rows/columns takes $N \times M$. Finding the start takes $N \times M$. Tracing the cable visits each cell at most once. Total operations $< 400$ for $N, M \le 20$. Runs in $< 0.005$ seconds. |
 | **Space Complexity** | $\mathcal{O}(N \times M)$ | Storage for the 2D grid matrix and the boolean `vis` matrix. |
+

@@ -6,7 +6,7 @@
 
 ---
 
-## 🧒 The "Lazy Man & Kid" Explanation (Everyday Real-World Analogy)
+## 💡 Real-World Intuition & Analogy
 
 ### 🦁 The Zoo Animals' Merry-Go-Round
 
@@ -201,3 +201,4 @@ print(ans, end='')
 |---|---|---|
 | **Time Complexity** | $\mathcal{O}(\text{Reachable States} \times \text{Cycles} \times E)$ | Given $\text{Loops} \times E \le 50$, the branching factor is at most $3 \sim 5$ and depth $\le 4$. The total explored states are $< 200$. Runs in $< 0.03$ seconds. |
 | **Space Complexity** | $\mathcal{O}(\text{Reachable States} \times E)$ | BFS queue and visited state dictionary store sorted edge tuples of size $E$. |
+
